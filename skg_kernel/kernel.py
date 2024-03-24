@@ -12,5 +12,5 @@ class SKGKernel(IPythonKernel):
 
     def do_execute(self, code, silent, store_history=True, user_expressions=None,
                    allow_stdin=False):
-        logger.info(code)
+        logger.info("audit logged:", code)
         return super().do_execute(code, silent, store_history, user_expressions, allow_stdin)
